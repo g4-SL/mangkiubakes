@@ -27,7 +27,27 @@ if ( 'content' != $current_layout ) :
 				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav>
-			<?php get_search_form(); ?>
-			
+
+			<div style="text-align:center;width:80%;margin:auto">
+				<?php get_search_form(); ?>
+			</div>
+
+			<div class="container" style="width:80%;margin:0 auto;">
+				<i>Connect with us</i>
+				<div class="clear"></div>
+				<div style="width:22%;float:left">
+					<img src="http://localhost/wp/wp-content/uploads/2015/09/instagram.png" alt="" style="width:100%">
+				</div>
+				<div style="width:22%;float:left;margin-left:4%">
+					<img src="http://localhost/wp/wp-content/uploads/2015/09/facebook.png" alt="" style="width:100%">
+				</div>
+				<div style="width:22%;float:left;margin-left:4%">
+					<img src="http://localhost/wp/wp-content/uploads/2015/09/pinterest.png" alt="" style="width:100%">
+				</div>
+				<div style="width:22%;float:left;margin-left:4%">
+					<img src="http://localhost/wp/wp-content/uploads/2015/09/twitter.png" alt="" style="width:100%">
+				</div>
+			</div>
+
 		</div><!-- #secondary .widget-area -->
 <?php endif; ?>

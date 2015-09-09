@@ -95,7 +95,6 @@ body{padding: 0}
 	padding: 2.5% 0 0 0;
 	margin: 0 25px 0 0;
 	width: 220px;
-	min-height: 1000px;
 	background: white;
 }
 
@@ -110,6 +109,8 @@ body{padding: 0}
 hgroup{display: none}
 #branding #s{display: none}
 #branding {border-top: 0;width: 100%}
+#searchform{padding: 15px 0}
+#s{max-width: 80%}
 
 /* =Sidebar
 ----------------------------------------------- */
@@ -168,9 +169,38 @@ hgroup{display: none}
 
 #side-nav ul ul{
 	display: none;
-	background: #fff;
+	background: #e2e2e2;
 	width: 220px;
 	margin: 0;
+	padding-top: 8px;
+    box-shadow: inset 0 5px 0 0 yellow;
+}
+
+#side-nav ul ul:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: yellow transparent; 
+}
+#side-nav ul ul:before{
+/*    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;  */
 }
 
 #side-nav ul li ul{
