@@ -1,0 +1,38 @@
+.container{overflow:hidden;}
+.container .columns{padding: 0.5% 0.4%; float: left;}
+.container .three.columns{width:24%}
+.container .four.columns{width:32.5%}
+.container .eight.columns{width:65.4%}
+.container .nine.columns{width:74.4%}
+.container .twelve.columns{width:100%}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+body{padding: 2%;}
+#main #content {margin: 0 2%;padding: 3% 3%; width: 90%;}
+#main #secondary {width: 100%}
+
+.container .three.columns{width:24%}
+.container .four.columns{width:32.5%}
+.container .eight.columns{width:65.4%}
+.container .nine.columns{width:74.4%}
+.container .twelve.columns{width:100%}
+}
+@media only screen and (min-width: 481px) and (max-width: 767px){
+body{padding: 2%;}
+#main #content {margin: 0 2%;padding: 2% 2%; width: 92%;}
+
+.container .three.columns{width:24%}
+.container .four.columns{width:32.5%}
+.container .eight.columns{width:65.4%}
+.container .nine.columns{width:74.4%}
+.container .twelve.columns{width:100%}
+}
+@media only screen and (max-width: 480px){
+.container .three.columns,
+.container .four.columns,
+.container .eight.columns,
+.container .nine.columns,
+.container .twelve.columns{width: 100%;}
+}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
