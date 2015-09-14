@@ -81,7 +81,7 @@ body{padding: 0}
 /* Right Content */
 .left-sidebar #primary {
 	float: right;
-	margin: 0 0 0 -25%;
+	margin: 0 0 20px -25%;
 	width: 100%;
 }
 .left-sidebar #content {
@@ -104,6 +104,9 @@ body{padding: 0}
 	padding: 0 0 0 0;
 	position: relative;
 }
+
+#colophon{padding: 0; width: 80%; margin: 0 10% 0 10%}
+#site-generator{margin: 0 5% 0 22.5%; padding: 2.5%; width: 70%; background: #fff;border-top: none !important}
 
 #access{display: none}
 hgroup{display: none}
@@ -256,15 +259,6 @@ hgroup{display: none}
 	-webkit-border-radius: 99em;
 	-moz-border-radius: 99em;
 	border: 10px solid #cac7c7; 
-}
-
-#colophon {
-	clear: both;
-	background-color: transparent;
-}
-
-#site-generator {
-	background-color: transparent;
 }
 
 .lio{
