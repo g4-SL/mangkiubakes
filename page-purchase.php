@@ -13,12 +13,7 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<div class="container">
-					<div class="intro-msg">
-						<h1>Mangkiu Bakes</h1>
-						<h2>We are passionate about baking &amp; we try to deliver the finest bakes to our customers</h2>
-					</div>
-
-					<hr>
+					<div class="hd twelve columns"><?php echo get_the_title(); ?></div>
 
 					<div class="twelve columns">
 						<h2>Order</h2>
@@ -40,15 +35,8 @@ get_header(); ?>
 						    We deliver cakes, cupcakes and dessets within the area Kota Kinabalu or within Sabah if requested. Buyers are subject to delivery charges. Outside Sabah deliveries are only applicable for cookies only which will be pack accordingly. Read more on our policies.
 						</p>
 						<h2>Shipping</h2>
-						<p>
-						    We only ship the following:
-						</p>
-						<ul class="clist">
-							<li>Gift baskets (no cupcake baskets)</li>
-							<li>Cookies and merchandise</li>
-						</ul>
-					    <br /><br />
-						<ul>
+						<ul class="ulp">
+							<li>We only ship the following: gift baskets (no cupcake baskets) &amp; cookies and merchandise</li>
 							<li>We ship to all 14 states</li>
 							<li>Please ensure someone will be able to receive the package</li>
 							<li>We do not guarantee shipment due to circumstances beyond our control (i.e., weather conditions, theft, holiday delays, incorrect information provided, etc.)</li>

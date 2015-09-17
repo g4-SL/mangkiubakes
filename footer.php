@@ -24,8 +24,7 @@
 			?>
 
 			<div id="site-generator">
-				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+				Copyright of Mangkiu Bakes <?php echo date('Y'); ?>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

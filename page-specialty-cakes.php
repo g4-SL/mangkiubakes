@@ -13,12 +13,7 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<div class="container">
-					<div class="intro-msg">
-						<h1>Mangkiu Bakes</h1>
-						<h2>We are passionate about baking &amp; we try to deliver the finest bakes to our customers</h2>
-					</div>
-
-					<hr>
+					<div class="hd twelve columns"><?php echo get_the_title(); ?></div>
 
 					<div class="twelve columns">
 						<p>
@@ -28,7 +23,7 @@ get_header(); ?>
 						    For pricing, contact us via phone or fill out our no-obligation pastry form with your cake, cookie or cupcake requests. Please note that that our specialty cakes start at RM500.
 						</p>
 						<p>
-						    We like work individually with each client and since all our cakes are made to order we usually require 4 to 6 weeks lead time. However, don’t hesitate to contact us even if your request is not within the time-frame.
+						    We like to work closely with each client and since all our cakes are made to order we usually require 4 to 6 weeks lead time. However, don’t hesitate to contact us even if your request is not within the time-frame.
 						</p>
 					</div>
 
@@ -36,7 +31,7 @@ get_header(); ?>
 
 					<div class="three columns">
 						<h2>Cake Flavours</h2>
-						<ul class="clist">
+						<ul class="ulp">
 							<li>Vanilla Cake</li>
 							<li>Chocolate Cake</li>
 							<li>Carrot Cake</li>
@@ -59,7 +54,7 @@ get_header(); ?>
 						<p>
 							Buttercream-based fillings**: (Flavours, fruit, nuts are mixed into buttercream for a rich delicious filling)
 						</p>
-						<ul class="clist">
+						<ul class="ulp">
 							<li>Vanilla</li>
 							<li>Chocolate</li>
 							<li>Mocha</li>
@@ -78,7 +73,7 @@ get_header(); ?>
 						<p>
 							Additional cost may occur for premium fillings.
 						</p>
-						<ul class="clist">
+						<ul class="ulp">
 							<li>Custard Fillings:</li>
 							<li>Chocolate</li>
 							<li>Vanilla</li>
@@ -90,7 +85,7 @@ get_header(); ?>
 					</div>
 					<div class="three columns">
 						<h2>Icing</h2>
-						<ul class="clist">
+						<ul class="ulp">
 							<li>Fondant over Butter Cream</li>
 						</ul>
 					</div>

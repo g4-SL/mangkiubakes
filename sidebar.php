@@ -32,19 +32,19 @@ if ( 'content' != $current_layout ) :
 				<?php get_search_form(); ?>
 			</div>
 
-			<div class="container" style="width:80%;margin:0 auto;">
-				<i>Connect with us</i>
-				<div class="clear"></div>
-				<div style="width:22%;float:left">
-					<img src="http://localhost/wp/wp-content/uploads/2015/09/instagram.png" alt="" style="width:100%">
+			<div class="clear"></div>
+
+			<div class="container" style="width:85%;margin:0 auto;">
+				<div style="width:19%;float:left;margin:0 3%">
+					<img src="http://localhost/wp/wp-content/uploads/2015/09/ig.png" alt="" style="width:100%">
 				</div>
-				<div style="width:22%;float:left;margin-left:4%">
-					<img src="http://localhost/wp/wp-content/uploads/2015/09/facebook.png" alt="" style="width:100%">
+				<div style="width:19%;float:left;margin:0 3%">
+					<img src="http://localhost/wp/wp-content/uploads/2015/09/fb.png" alt="" style="width:100%">
 				</div>
-				<div style="width:22%;float:left;margin-left:4%">
+				<div style="width:19%;float:left;margin:0 3%">
 					<img src="http://localhost/wp/wp-content/uploads/2015/09/pinterest.png" alt="" style="width:100%">
 				</div>
-				<div style="width:22%;float:left;margin-left:4%">
+				<div style="width:19%;float:left;margin:0 3%">
 					<img src="http://localhost/wp/wp-content/uploads/2015/09/twitter.png" alt="" style="width:100%">
 				</div>
 			</div>

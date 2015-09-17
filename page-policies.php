@@ -13,16 +13,11 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<div class="container">
-					<div class="intro-msg">
-						<h1>Mangkiu Bakes</h1>
-						<h2>We are passionate about baking &amp; we try to deliver the finest bakes to our customers</h2>
-					</div>
-
-					<hr>
+					<div class="hd twelve columns"><?php echo get_the_title(); ?></div>
 
 					<div class="twelve columns">
 						<h2>Order Policies</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								Cake orders will only be processed when submitted a week earlier or at least two days earlier.
 							</li>
@@ -34,7 +29,7 @@ get_header(); ?>
 							</li>								
 						</ul>
 						<h2>Return Policies</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								We do not accept returns on internet or retail sales unless we have made an error. 
 							</li>
@@ -52,7 +47,7 @@ get_header(); ?>
 							</li>								
 						</ul>
 						<h2>Refund Policies</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								We offer refunds on retail and internet sales if we have made an error in our shipment/delivery or if our products arrive in an unsatisfactory condition. 
 							</li>
@@ -67,7 +62,7 @@ get_header(); ?>
 							</li>								
 						</ul>
 						<h2>Cancellation Policies</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								Please know that your satisfaction is our ultimate goal. Please contact us about any aspect of your order and we will do our best to ensure your satisfaction. 
 							</li>
@@ -76,18 +71,21 @@ get_header(); ?>
 							</li>
 							<li>
 								Any Wedding Cakes, Groom’s cakes, three-dimensional carved cakes, or other tiered cakes cancelled less than 90 days prior to the scheduled date of the event, will receive NO refunds on any payments made in securing the cakes, including the initial deposit or subsequent payments, up to and including final payments. Cakes cancelled more than 90 days before the wedding date will receive a full refund. 
-							</li>	
-							<br /><br />
-							Cake Changes:	
-							<li>
-								Changes to your cake size, description, flavors, etc. will be accepted until 2 weeks prior to the wedding date for wedding cakes and 3 days for others. After that lockout date we cannot accept any changes. 
-							</li>
-							<li>
-								If you insist on changes after the lockout date, you will incur additional non-refundable charges. 
 							</li>						
 						</ul>
+						<div style="width:90%; margin: 0 auto">
+							Cake Changes:
+							<ul class="ulp">	
+								<li>
+									Changes to your cake size, description, flavors, etc. will be accepted until 2 weeks prior to the wedding date for wedding cakes and 3 days for others. After that lockout date we cannot accept any changes. 
+								</li>
+								<li>
+									If you insist on changes after the lockout date, you will incur additional non-refundable charges. 
+								</li>						
+							</ul>
+						</div>
 						<h2>Matching Colors</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								We make every possible effort to match your wedding colors, however, to get as close as possible you must provide us with color swatch. 
 							</li>
@@ -99,7 +97,7 @@ get_header(); ?>
 							</li>								
 						</ul>
 						<h2>Email Communications</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								We send email confirmations of your online order to you. 
 							</li>
@@ -111,7 +109,7 @@ get_header(); ?>
 							</li>								
 						</ul>
 						<h2>Order Modifications</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								If you need to modify an order after it’s been placed, we can accommodate your request as long as we have not produced or shipped your order.
 							</li>
@@ -123,7 +121,7 @@ get_header(); ?>
 							</li>							
 						</ul>
 						<h2>Customization</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								We offer customization of products so if you wish to speak with someone regarding your specific requirements, please call us weekdays from 9 a.m. to 5 p.m. or email mangkiuhomesweethome@hotmail.com. 
 							</li>
@@ -132,7 +130,7 @@ get_header(); ?>
 							</li>								
 						</ul>
 						<h2>Product Guarantee</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								If you are dissatisfied with your purchase, please contact us weekdays between 9 A.M. and 5 P.M.. 
 							</li>
@@ -144,7 +142,7 @@ get_header(); ?>
 							</li>								
 						</ul>
 						<h2>Food Allergens</h2>
-						<ul>
+						<ul class="ulp">
 							<li>
 								Please inform us of any food allergies before we process your order.
 							</li>

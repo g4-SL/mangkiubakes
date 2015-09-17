@@ -12,6 +12,13 @@
  Text Domain:  twenty-eleven-child
 */
 
+@font-face {
+	font-family: Legend;  
+	src: local('Legend-M54'), 
+		url("fonts/Legend-M54.ttf") format('truetype');  
+	font-weight: normal;  
+}
+
 /* =Global
 ----------------------------------------------- */
 
@@ -35,9 +42,12 @@ h1{
 }
 
 h2{
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
-	color: #febcac;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #996a6a;
+	padding-bottom: 5px;
 }
 
 a,a:visited,a:focus{
@@ -144,6 +154,8 @@ hgroup{display: none}
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;*/
+
+	margin: 3px 0;
 }
 
 #side-nav ul li:hover {
@@ -208,7 +220,7 @@ hgroup{display: none}
 
 #side-nav ul li ul{
 	position: absolute;
-	top: 50px;
+	top: 25px;
 	left: 0;
 	z-index: 999;
 }
@@ -265,7 +277,50 @@ hgroup{display: none}
 	margin: 10px 10px;
 }
 
-.clist{
+.hd{
+	font-family: 'Legend';
+	letter-spacing: 0.15em;
+	font-size: 2.7em;
+	color: #323c40;
+	text-align: center;
+	border-top: 2px dashed #323c40;
+	border-bottom: 2px dashed #323c40;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+.ulp{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0 15px 15px 15px;
+	list-style-type: disc;
+}
+
+.ulp li{
+	padding-left: 5px;
+}
+
+.entry-header{
+	width: 100% !important;
+}
+
+.tt ul.category{
+	text-align: center;
 	list-style-type: none;
 	margin: 0;
+}
+
+.tt ul.category li{
+	display: inline-block;
+	margin: 0 4px 10px;
+}
+
+.tt ul.category li a{
+	color: #fff;
+	background-color: #7eb8d9;
+	font-family: 'Raleway';
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	padding: 6px 15px;
 }

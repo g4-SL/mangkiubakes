@@ -14,15 +14,15 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<header class="page-header">
-					<h1><?php single_cat_title( '', true ); ?></h1>
+				<header class="page-header" style="text-align:center">
+					<div class="hd twelve columns"><?php echo single_cat_title( '', true ); ?></div>
 				</header>
 
 				<div class="container">
 				<?php $counter = 0; ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<div class="three columns" style="text-align:center;margin-bottom:10px">
+					<div class="three columns space" style="text-align:center;margin-bottom:10px">
 						<?php if(has_post_thumbnail()) {                    
 						    $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
 						    ?>
