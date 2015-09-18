@@ -7,6 +7,16 @@
 .container .twelve.columns{width:100%}
 .space{padding: 0.5% 1% !important}
 
+@media only screen and (min-width: 1268px){
+#main {width: 1013.59px; margin: 0 auto}
+#colophon{padding: 0; width: 1013.59px; margin: 0 auto}
+}
+
+@media only screen and (max-width: 1267px){
+#main {width: 80%; margin: 0 10%}
+#colophon{padding: 0; width: 80%; margin: 0 10%}
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px){
 body{padding: 2%;}
 #main #content {margin: 0 2%;padding: 3% 3%; width: 90%;}
