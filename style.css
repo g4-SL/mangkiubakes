@@ -81,29 +81,22 @@ body{padding: 0}
 
 #main{padding: 10px 0; width: 80%; margin: 0 10%;}
 
-.left-sidebar.singular #content {
-	margin: 0 5% 0 22.5%;
-	padding: 2.5% 2.5% 0 2.5%;
-	width: 70%;
-	background-color: #fff;
-}
-
 /* Right Content */
 .left-sidebar #primary {
 	float: right;
-	margin: 0 0 20px -25%;
+	margin: 0 0 20px -240px;
 	width: 100%;
 }
-.left-sidebar #content {
-	margin: 0 5% 0 22.5%;
+.left-sidebar #content, .left-sidebar.singular #content {
+	margin: 0 0 0 240px;
 	padding: 2.5% 2.5% 0 2.5%;
-	width: 70%;
+	width: auto;
 	background-color: #fff;
 }
 .left-sidebar #secondary {
 	float: left;
 	padding: 2.5% 0 0 0;
-	margin: 0 25px 0 0;
+	margin: 0;
 	width: 220px;
 	background: white;
 }
@@ -111,7 +104,7 @@ body{padding: 0}
 /*singular post*/
 .singular .hentry {
 	border-bottom: none;
-	padding: 0 0 0 0;
+	padding: 0;
 	position: relative;
 }
 
