@@ -285,7 +285,7 @@ hgroup{float:left}
 }
 
 @media only screen and (min-width: 481px){
-.hd{font-size: 2.7em}
+.hd{font-size: 2.7em; line-height: 50px}
 hgroup{display: none}
 #branding #nav{display: none}
 #menu{display: none}
@@ -326,6 +326,7 @@ hgroup{display: none}
 	border-bottom: 2px dashed #323c40;
 	margin-bottom: 25px;
 	margin-top: 10px;
+	padding:15px 0 !important;
 }
 
 .ulp{
