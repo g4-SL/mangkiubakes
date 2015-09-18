@@ -9,4 +9,16 @@ $j(document).ready(function(){
 			$j('#secondary').css({position: 'static', top: '0px'});
 		}
 	});
+
+	$j("#nav").addClass("js");
+	$j("#nav").addClass("js").before('<div id="menu">☰</div>');
+	$j("#menu").click(function(){
+		$j("#nav").css({top: $j("#menu").offset().top + $j("#menu").height()});
+		$j("#nav").toggle();
+	});
+	// $j(window).resize(function(){
+	// 	if(window.innerWidth > 768) {
+	// 		$j("#nav").removeAttr("style");
+	// 	}
+	// });
 });

@@ -84,12 +84,11 @@ body{padding: 0}
 /* Right Content */
 .left-sidebar #primary {
 	float: right;
-	margin: 0 0 20px -240px;
 	width: 100%;
 }
 .left-sidebar #content, .left-sidebar.singular #content {
-	margin: 0 0 0 240px;
-	padding: 2.5% 2.5% 0 2.5%;
+	margin: 0 0 20px 240px;
+	padding: 2.5%;
 	width: auto;
 	background-color: #fff;
 }
@@ -111,8 +110,6 @@ body{padding: 0}
 #colophon{padding: 0}
 #site-generator{margin: 0 0 0 240px; padding: 2.5%; width:auto; background: #fff;border-top: none !important}
 
-#access{display: none}
-hgroup{display: none}
 #branding #s{display: none}
 #branding {border-top: 0;width: 100%}
 #searchform{padding: 15px 0}
@@ -244,6 +241,56 @@ hgroup{display: none}
 /* =Misc
 ----------------------------------------------- */
 
+hgroup{float:left}
+#menu{float:right;
+	margin:15px 10px 0 0;
+	width:40px;
+	display: block;
+	background:#ddd;
+	font-size:1.35em;
+	text-align: center;}
+
+#nav{
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	z-index: 9999;
+}
+#nav li {
+	width:100%;
+	float:left;
+	border-bottom: 1px solid #eee;
+}
+#nav li:last-child {
+	border-right:none;
+}
+
+#nav li a {
+	display: block;
+	width:80%;
+	background:#ddd;
+	padding:4% 10%;
+	font-size:1.35em;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 480px){
+.hd{font-size: 2.2em; line-height: 30px; padding:15px 0 !important;}
+.tt ul.category li a{font-size: 0.9em}
+#branding a img{display: none}
+#branding hgroup #site-title{display: block; padding: 0}
+
+#nav.js {display: none}
+}
+
+@media only screen and (min-width: 481px){
+.hd{font-size: 2.7em}
+hgroup{display: none}
+#branding #nav{display: none}
+#menu{display: none}
+}
+
 .circular{
 	display: block;
 	width: 90%;
@@ -273,7 +320,6 @@ hgroup{display: none}
 .hd{
 	font-family: 'Legend';
 	letter-spacing: 0.15em;
-	font-size: 2.7em;
 	color: #323c40;
 	text-align: center;
 	border-top: 2px dashed #323c40;

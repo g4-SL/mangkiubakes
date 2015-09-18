@@ -10,11 +10,13 @@
 @media only screen and (min-width: 1268px){
 #main {width: 1013.59px; margin: 0 auto}
 #colophon{padding: 0; width: 1013.59px; margin: 0 auto}
+#primary{margin: 0 0 20px -240px}
 }
 
-@media only screen and (max-width: 1267px){
+@media only screen and (max-width: 1267px) and (min-width: 960px){
 #main {width: 80%; margin: 0 10%}
 #colophon{padding: 0; width: 80%; margin: 0 10%}
+#primary{margin: 0 0 20px -240px}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px){
@@ -39,6 +41,12 @@ body{padding: 2%;}
 .container .twelve.columns{width:100%}
 }
 @media only screen and (max-width: 480px){
+#main{width:100%}
+#secondary{display: none}
+#primary{margin: 0}
+#content{width:auto; margin: 0 0 20px 0!important; padding: 0 5px}
+#site-generator{width: auto; margin:0;}
+
 .container .three.columns,
 .container .four.columns,
 .container .eight.columns,
