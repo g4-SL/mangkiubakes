@@ -20,7 +20,9 @@ get_header(); ?>
 
 					<!-- category section -->
 					<div style="text-align:center">
-					<h1>What we do in the MangkiuBakes kitchen</h1>
+					<div class="hds" style="line-height:50px;padding-top:35px">Baked with love and passion</div>
+					<div class="hds2" style="line-height:40px">Cause every customer deserves the best</div>
+					<div class="hds" style="line-height:40px;padding-bottom:25px">+</div>
 				        <div class="three columns space">
 			            	<h2>Fondant Cakes</h2>
     						<?php
@@ -63,7 +65,7 @@ get_header(); ?>
 
 					<!-- introduction section -->
 			        <div class="eight columns space">
-		            	<h1>Welcome</h1>
+		            	<div class="hds">Welcome</div>
 		            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 		            </div>
 			        <div class="four columns space">
@@ -80,7 +82,7 @@ get_header(); ?>
 			            </div>
 				        <div class="three columns space">
 			            	<h2>Order here</h2>
-			            	<img src="http://localhost/wp/wp-content/uploads/2015/08/rainbow-cake.jpg" alt="" class="intro-cat">
+			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Order Online')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/08/rainbow-cake.jpg" alt="" class="intro-cat"></a>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">

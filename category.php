@@ -44,6 +44,9 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
+
+				
+				<?php twentyeleven_content_nav( 'nav-below' ); ?>
 				</div>
 
 			<?php else : ?>

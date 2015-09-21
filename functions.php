@@ -15,10 +15,10 @@
 
 	function add_jquery() {
 		wp_enqueue_script( 'jquery' );
-		wp_register_script('jsscript', get_stylesheet_directory_uri() . '/script.js', array('jquery'));
+		wp_register_script('jsscript', get_stylesheet_directory_uri() . '/js/script.js', array('jquery'));
 		wp_enqueue_script('jsscript');
 	}
-	
+
 	remove_filter( 'HEADER_IMAGE_WIDTH', 'twentyeleven_header_image_width' );
 	remove_filter( 'HEADER_IMAGE_HEIGHT', 'twentyeleven_header_image_height' );
 	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'child_header_image_width', 1500 ) );
