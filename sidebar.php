@@ -13,8 +13,8 @@ $current_layout = $options['theme_layout'];
 if ( 'content' != $current_layout ) :
 ?>
 		<div id="secondary" class="widget-area" role="complementary">
-			<div style="text-align:center">
-				<img src="http://localhost/wp/wp-content/uploads/2015/08/Logo-Brown-Idea.png" alt="" id="site-logo">
+			<div style="margin:0 auto;max-width:80%">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><img src="http://localhost/wp/wp-content/uploads/2015/09/logo.png" alt="" style="width:100%"></a>
 			</div>
 
 			<nav id="side-nav" role="navigation">

@@ -98,7 +98,6 @@
 						$header_image_width = HEADER_IMAGE_WIDTH;
 					}
 					?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<?php
 					// Compatibility with versions of WordPress prior to 3.4.
 					if ( function_exists( 'get_custom_header' ) ) {
@@ -110,7 +109,6 @@
 					}
 					?>
 					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( $header_image_width ); ?>" height="<?php echo esc_attr( $header_image_height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-			</a>
 			<?php endif; // end check for removed header image ?>
 
 	</header><!-- #branding -->

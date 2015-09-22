@@ -305,8 +305,8 @@ hgroup{display: none}
 
 .circular{
 	display: block;
-	width: 90%;
-	height: 90%;
+	width: 80%;
+	height: 80%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -351,6 +351,25 @@ hgroup{display: none}
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 0.8em;
+}
+.pt{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff;
+	padding: 5px 0;
+	background-color: #e2e2e2;
+}
+.pts{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #996a6a;
+	padding: 5px 0;
+	margin-bottom: 5px;
+	border-bottom: 1px dashed #996a6a;
 }
 
 .ulp{

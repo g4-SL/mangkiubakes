@@ -19,7 +19,7 @@ get_header(); ?>
 
 					<?php endwhile; // end of the loop. ?>
 
-					<div style="margin:0 auto;margin:40px 0 10px 0"><h2 style="text-align:center">Other bakes we cook up in our kitchen</h2></div>
+					<div style="margin:40px 0 10px 0;backgroun-color:"><h2 style="text-align:center">Other bakes we cook up in our kitchen</h2></div>
 
 					<?php
 					$related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 4, 'post__not_in' => array($post->ID) ) );
