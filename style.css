@@ -407,3 +407,77 @@ hgroup{display: none}
 	letter-spacing: 0.5px;
 	padding: 6px 15px;
 }
+
+/*----- Tabs -----*/
+.tabs {
+width:100%;
+display:inline-block;
+text-align: center;
+}
+
+/*----- Tab Links -----*/
+.tab-links{
+margin: 0;
+display: inline-block;
+}
+.tab-links:after {
+display:block;
+clear:both;
+content:'';
+}
+
+.tab-links li {
+margin:0px 5px;
+float:left;
+list-style:none;
+}
+
+.tab-links a {
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#7FB5DA;
+    font-size:16px;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background:#a7cce5;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+background:#fff;
+color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	width:85%;
+	margin: 0 auto; 
+	padding: 15px 0;
+	background: url('http://localhost/wp/wp-content/uploads/2015/09/bg-menu.jpg');
+}
+.tab-content .tab table{
+	width: 60%;
+	margin: 0 auto;
+	font-family: 'Jennifer Lynne';
+	font-size: 26px;
+	color: #fff;
+}
+.tab-content .tab tr td:nth-child(1){
+	float:left;
+}
+.tab-content .tab tr td:nth-child(2){
+	float:right;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
