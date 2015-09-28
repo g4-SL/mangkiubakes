@@ -18,7 +18,7 @@ get_header(); ?>
 					<div class="hd twelve columns"><?php echo single_cat_title( '', true ); ?></div>
 				</header>
 
-				<div class="container">
+				<div class="container" id="dyn">
 				</div>
 
 			<?php else : ?>
@@ -47,31 +47,28 @@ get_header(); ?>
 	var $j = jQuery.noConflict();
 	$j(document).ready(function(){
 
+		var slug = <?php 
+				 	$cat = get_query_var('cat');
+				  	$yourcat = get_category ($cat);
+				  	echo json_encode($yourcat->slug);
+		        	?>;
+
 		function loadArticle(pageNumber){   
-		
-			console.log("test"); 
 		    $j.ajax({
 		        url: "<?php bloginfo('wpurl') ?>/wp-admin/admin-ajax.php",
 		        type:'POST',
-		        data: "action=infinite_scroll&page_no="+ pageNumber + '&loop_file=loop&slug=' + 
-		        	<?php 
-		        		$cat = get_query_var('cat');
-		        		$cat_now = get_category($cat);
-		        		echo $cat_now->slug; 
-	        		?>, 
+		        data: "action=infinite_scroll&page_no="+ pageNumber + '&loop_file=loop&slug=' + slug,
 		        success: function(html){
-
-			console.log("test");
-		            $j("#content").append(html);   // This will be the div where our content will be loaded
+		            $j("#dyn").append(html);
 		        }
 		    });
 		    return false;
 		} 
 
 		var count = 2;
-		var total = <?php echo $wp_query->found_posts; ?>;
+		var total = <?php echo $wp_query->max_num_pages; ?>;
+		loadArticle(1);
 		$j(window).scroll(function(){
-			console.log("scrolling");
 			if  ($j(window).scrollTop() == $j(document).height() - $j(window).height()){
 				if (count > total){
 					return false;
