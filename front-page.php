@@ -82,12 +82,12 @@ get_header(); ?>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
-			            	<img src="http://localhost/wp/wp-content/uploads/2015/01/20141209_065949.jpg" alt="" class="intro-cat">
+			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Price List')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/01/20141209_065949.jpg" alt="" class="intro-cat"></a>
 			            	<div class="pts">Price List</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
-			            	<img src="http://localhost/wp/wp-content/uploads/2015/07/20150318_095325.jpg" alt="" class="intro-cat">
+			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Price List')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/07/20150318_095325.jpg" alt="" class="intro-cat"></a>
 			            	<div class="pts">Feedback</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
