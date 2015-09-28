@@ -19,34 +19,6 @@ get_header(); ?>
 				</header>
 
 				<div class="container">
-				<?php $counter = 0; ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<div class="three columns space" style="text-align:center;margin-bottom:10px">
-						<?php if(has_post_thumbnail()) {                    
-						    $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
-						    ?>
-						    <a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title(); ?>">
-					    	<?php
-						    echo '<img src="' . $image_src[0]  . '" width="100%"  /></a>';
-						} ?>
-						<div style="width:80%;margin:0 10%">
-				        	<a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
-				        </div>
-					</div>
-
-					<?php
-						$counter++;
-						if($counter == 4){
-							echo '<div class="clear"></div>';
-							$counter = 0;
-						}
-					?>
-
-				<?php endwhile; ?>
-
-				
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
 				</div>
 
 			<?php else : ?>
@@ -69,3 +41,46 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+<?php if( is_category() ) : ?>
+	<script type="text/javascript">
+	var $j = jQuery.noConflict();
+	$j(document).ready(function(){
+
+		function loadArticle(pageNumber){   
+		
+			console.log("test"); 
+		    $j.ajax({
+		        url: "<?php bloginfo('wpurl') ?>/wp-admin/admin-ajax.php",
+		        type:'POST',
+		        data: "action=infinite_scroll&page_no="+ pageNumber + '&loop_file=loop&slug=' + 
+		        	<?php 
+		        		$cat = get_query_var('cat');
+		        		$cat_now = get_category($cat);
+		        		echo $cat_now->slug; 
+	        		?>, 
+		        success: function(html){
+
+			console.log("test");
+		            $j("#content").append(html);   // This will be the div where our content will be loaded
+		        }
+		    });
+		    return false;
+		} 
+
+		var count = 2;
+		var total = <?php echo $wp_query->found_posts; ?>;
+		$j(window).scroll(function(){
+			console.log("scrolling");
+			if  ($j(window).scrollTop() == $j(document).height() - $j(window).height()){
+				if (count > total){
+					return false;
+				}else{
+					loadArticle(count);
+				}
+				count++;
+			}
+		}); 
+	});
+	</script>
+<?php endif; ?>
