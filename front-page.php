@@ -22,7 +22,6 @@ get_header(); ?>
 					<div style="text-align:center">
 					<div class="hds" style="line-height:50px;padding-top:35px">Baked with love and passion</div>
 					<div class="hds2" style="line-height:40px">Cause every customer deserves the best</div>
-					<div class="hds" style="line-height:40px">+</div>
 				        <div class="three columns space">
     						<?php
     							$category_id = get_cat_ID( 'fondant' );
