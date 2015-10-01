@@ -30,6 +30,12 @@
 		url("fonts/Jennifer-Lynne.ttf") format('truetype');  
 	font-weight: normal;  
 }
+@font-face {
+	font-family: Lobster;  
+	src: local('Lobster'), 
+		url("fonts/Lobster.ttf") format('truetype');  
+	font-weight: normal;  
+}
 
 /* =Global
 ----------------------------------------------- */
@@ -54,9 +60,8 @@ h1{
 }
 
 h2{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.4em;
-	text-transform: uppercase;
+	font-family: 'Lobster';
+	font-size: 1.6em;
 	letter-spacing: 2px;
 	color: #996a6a;
 	padding-bottom: 5px;
@@ -137,7 +142,6 @@ body{padding: 0}
 
 #side-nav{
 	list-style-type: none;
-	padding-top: 25px;
 }
 
 #side-nav ul {
@@ -148,26 +152,8 @@ body{padding: 0}
 }
 
 #side-nav ul li {
-/*	text-indent: 0;
-	padding-right: 0;
-	position: relative;
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease rotate(0.05deg);
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;*/
 
 	margin: 3px 0;
-}
-
-#side-nav ul li:hover {
-/*	text-indent: 8px;
-	padding-right: 28px;
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease rotate(0.05deg);
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;*/
 }
 
 #side-nav ul li a{
@@ -205,19 +191,6 @@ body{padding: 0}
     border-width: 0 6px 6px 6px;
     border-style: solid;
     border-color: yellow transparent; 
-}
-#side-nav ul ul:before{
-/*    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-width: 0 8px 8px 8px;
-    border-style: solid;
-    border-color: rgba(0,0,0,0.1) transparent;  */
 }
 
 #side-nav ul li ul{
@@ -369,6 +342,9 @@ hgroup{display: none}
 	color: #996a6a;
 	padding: 5px 0;
 	margin-bottom: 5px;
+}
+
+.dashed{
 	border-bottom: 1px dashed #996a6a;
 }
 
@@ -382,6 +358,19 @@ hgroup{display: none}
 
 .ulp li{
 	padding-left: 5px;
+}
+
+.boxlist{
+	margin: 0;
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+.boxlist li{
+	text-align: center;
+	list-style-type: none;
+	float: left;
+	padding: 0 1px; 
 }
 
 .entry-header{
@@ -408,76 +397,41 @@ hgroup{display: none}
 	padding: 6px 15px;
 }
 
-/*----- Tabs -----*/
-.tabs {
-width:100%;
-display:inline-block;
-text-align: center;
-}
-
-/*----- Tab Links -----*/
-.tab-links{
-margin: 0;
-display: inline-block;
-}
-.tab-links:after {
-display:block;
-clear:both;
-content:'';
-}
-
-.tab-links li {
-margin:0px 5px;
-float:left;
-list-style:none;
-}
-
-.tab-links a {
-    padding:9px 15px;
-    display:inline-block;
-    border-radius:3px 3px 0px 0px;
-    background:#7FB5DA;
-    font-size:16px;
-    font-weight:600;
-    color:#4c4c4c;
-    transition:all linear 0.15s;
-}
-
-.tab-links a:hover {
-    background:#a7cce5;
-    text-decoration:none;
-}
-
-li.active a, li.active a:hover {
-background:#fff;
-color:#4c4c4c;
-}
-
 /*----- Content of Tabs -----*/
-.tab-content {
-	width:85%;
-	margin: 0 auto; 
-	padding: 15px 0;
-	background: url('http://localhost/wp/wp-content/uploads/2015/09/bg-menu.jpg');
+.tabledesign {
+	margin: 0 auto 15px auto; 
+/*	background: url('http://localhost/wp/wp-content/uploads/2015/09/bg-menu.jpg');*/
 }
-.tab-content .tab table{
-	width: 60%;
+table{
+	width:80%;
 	margin: 0 auto;
-	font-family: 'Jennifer Lynne';
-	font-size: 26px;
-	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #0c0c0c;
 }
-.tab-content .tab tr td:nth-child(1){
+table tr th, .othertit{
+	font-family: 'Lobster';
+	color: #5b4039;
+	padding-left:15px;
+	background-color: #71a39a;
+   	-webkit-text-stroke: 1px #fff;
+	  text-shadow:
+	   -2px -2px 0 #fff,  
+	    2px -2px 0 #fff,
+	    -2px 2px 0 #fff,
+	     2px 2px 0 #fff;
+}
+table tr th{
+	font-size: 2.7em;
+}
+table tr td:nth-child(1){
 	float:left;
 }
-.tab-content .tab tr td:nth-child(2){
+table tr td:nth-child(2){
 	float:right;
 }
-
-.tab {
-    display:none;
-}
-
-.tab.active {
-    display:block;
+.othertit{
+	font-size: 1.2em;
+	margin-bottom: 10px;
 }

@@ -73,22 +73,22 @@ get_header(); ?>
 					<div style="text-align:center">
 				        <div class="three columns space">
 			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Policies')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/01/20141126_104314.jpg" alt="" class="intro-cat"></a>
-				        	<div class="pts">Policies</div>
+				        	<div class="pts dashed">Policies</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
 			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Order Online')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/03/20150226_131859.jpg" alt="" class="intro-cat"></a>
-			            	<div class="pts">Order</div>
+			            	<div class="pts dashed">Order</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
 			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Price List')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/01/20141209_065949.jpg" alt="" class="intro-cat"></a>
-			            	<div class="pts">Price List</div>
+			            	<div class="pts dashed">Price List</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
 			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Feedback')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/07/20150318_095325.jpg" alt="" class="intro-cat"></a>
-			            	<div class="pts">Feedback</div>
+			            	<div class="pts dashed">Feedback</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 			        </div>
@@ -97,15 +97,15 @@ get_header(); ?>
 					
 					<div style="text-align:center">
 				        <div class="four columns space">
-			            	<h2>Customer review</h2>
+			            	<div class="pts">Customer review</div>
 			            	<img src="http://localhost/wp/wp-content/uploads/2015/08/rainbow-cake.jpg" alt="" class="intro-cat">
 			            </div>
 				        <div class="four columns space">
-			            	<h2>Latest instagram</h2>
+			            	<div class="pts">Latest instagram</div>
 			            	<img src="http://localhost/wp/wp-content/uploads/2015/08/rainbow-cake.jpg" alt="" class="intro-cat">
 			            </div>
 				        <div class="four columns space">
-			            	<h2>Our sister shop</h2>
+			            	<div class="pts">Our sister shop</div>
 			            	<img src="http://localhost/wp/wp-content/uploads/2015/08/945png.png" alt="" class="intro-cat">
 			            </div>
 			        </div>
