@@ -13,8 +13,8 @@ $current_layout = $options['theme_layout'];
 if ( 'content' != $current_layout ) :
 ?>
 		<div id="secondary" class="widget-area" role="complementary">
-			<div style="margin:0 auto;max-width:80%">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><img src="http://localhost/wp/wp-content/uploads/2015/09/logo.png" alt="" style="width:100%"></a>
+			<div id="logo" style="margin:0 auto;max-width:70%">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="" style="width:100%"></a>
 			</div>
 
 			<nav id="side-nav" role="navigation">
@@ -28,24 +28,20 @@ if ( 'content' != $current_layout ) :
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav>
 
-			<div style="text-align:center;width:80%;margin:auto">
-				<?php get_search_form(); ?>
-			</div>
-
 			<div class="clear"></div>
 
-			<div class="container" style="width:85%;margin:0 auto;">
-				<div style="width:19%;float:left;margin:0 3%">
-					<img src="http://localhost/wp/wp-content/uploads/2015/09/ig.png" alt="" style="width:100%">
-				</div>
-				<div style="width:19%;float:left;margin:0 3%">
-					<img src="http://localhost/wp/wp-content/uploads/2015/09/fb.png" alt="" style="width:100%">
-				</div>
-				<div style="width:19%;float:left;margin:0 3%">
-					<img src="http://localhost/wp/wp-content/uploads/2015/09/pinterest.png" alt="" style="width:100%">
-				</div>
-				<div style="width:19%;float:left;margin:0 3%">
-					<img src="http://localhost/wp/wp-content/uploads/2015/09/twitter.png" alt="" style="width:100%">
+			<div class="container" style="position:relative">
+				<div class="sidefoot">
+					<div style="text-align:center;width:80%;margin:auto">
+						<?php get_search_form(); ?>
+					</div>
+					<div class="clear"></div>
+					<ul>
+						<li><img src="<?php bloginfo('stylesheet_directory'); ?>/img/social/ig.png" alt="" style="width:100%"></li>
+						<li><img src="<?php bloginfo('stylesheet_directory'); ?>/img/social/fb.png" alt="" style="width:100%"></li>
+						<li><img src="<?php bloginfo('stylesheet_directory'); ?>/img/social/pinterest.png" alt="" style="width:100%"></li>
+						<li><img src="<?php bloginfo('stylesheet_directory'); ?>/img/social/twitter.png" alt="" style="width:100%"></li>
+					</ul>
 				</div>
 			</div>
 

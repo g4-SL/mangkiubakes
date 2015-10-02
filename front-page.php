@@ -27,7 +27,7 @@ get_header(); ?>
     							$category_id = get_cat_ID( 'fondant' );
 						    	$category_link = get_category_link( $category_id );
 						    ?>
-						    <a href="<?php echo esc_url( $category_link ); ?>" title="Fondant Cakes"><img src="http://localhost/wp/wp-content/uploads/2015/09/fondant.png" alt="" class="intro-cat"></a>
+						    <a href="<?php echo esc_url( $category_link ); ?>" title="Fondant Cakes"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/category/fondant.png" alt="" class="intro-cat"></a>
 			            	<div class="pt">Fondant</div>
 			            </div>
 				        <div class="three columns space">
@@ -35,7 +35,7 @@ get_header(); ?>
     							$category_id = get_cat_ID( 'cupcakes' );
 						    	$category_link = get_category_link( $category_id );
 						    ?>
-						    <a href="<?php echo esc_url( $category_link ); ?>" title="Cupcakes"><img src="http://localhost/wp/wp-content/uploads/2015/09/cupcake.png" alt="" class="intro-cat"></a>
+						    <a href="<?php echo esc_url( $category_link ); ?>" title="Cupcakes"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/category/cupcake.png" alt="" class="intro-cat"></a>
 			            	<div class="pt">Cupcakes</div>
 			            </div>
 				        <div class="three columns space">
@@ -43,7 +43,7 @@ get_header(); ?>
     							$category_id = get_cat_ID( 'cookies' );
 						    	$category_link = get_category_link( $category_id );
 						    ?>
-						    <a href="<?php echo esc_url( $category_link ); ?>" title="Fondant Cakes"><img src="http://localhost/wp/wp-content/uploads/2015/09/cupcake.png" alt="" class="intro-cat"></a>
+						    <a href="<?php echo esc_url( $category_link ); ?>" title="Fondant Cakes"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/category/cupcake.png" alt="" class="intro-cat"></a>
 			            	<div class="pt">Cookies</div>
 			            </div>
 				        <div class="three columns space">
@@ -51,7 +51,7 @@ get_header(); ?>
     							$category_id = get_cat_ID( 'cakes' );
 						    	$category_link = get_category_link( $category_id );
 						    ?>
-						    <a href="<?php echo esc_url( $category_link ); ?>" title="Fondant Cakes"><img src="http://localhost/wp/wp-content/uploads/2015/09/cake.png" alt="" class="intro-cat"></a>
+						    <a href="<?php echo esc_url( $category_link ); ?>" title="Fondant Cakes"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/category/cake.png" alt="" class="intro-cat"></a>
 			            	<div class="pt">Cakes</div>
 			            </div>
 					</div>

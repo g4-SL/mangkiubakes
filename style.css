@@ -123,7 +123,7 @@ body{padding: 0}
 }
 .left-sidebar #secondary {
 	float: left;
-	padding: 2.5% 0 0 0;
+	padding: 1% 0 0 0;
 	margin: 0;
 	width: 220px;
 	background: transparent;
@@ -147,11 +147,6 @@ body{padding: 0}
 /* =Sidebar
 ----------------------------------------------- */
 
-#site-logo{
-	max-height: 150px;
-	max-width: 150px;
-}
-
 #side-nav{
 	list-style-type: none;
 	width:70%;
@@ -166,7 +161,7 @@ body{padding: 0}
 }
 
 #side-nav ul li {
-	margin: 5px 0;
+	padding: 5px 0;
 	border-bottom: 1px inset #d2d7d6;
 }
 
@@ -194,36 +189,38 @@ body{padding: 0}
 
 #side-nav ul ul{
 	display: none;
-	background: #e2e2e2;
-	width: 220px;
+	background: transparent url("img/dropdown.png") no-repeat scroll left top;
+	width: 100%;
 	margin: 0;
 	padding-top: 8px;
-    box-shadow: inset 0 5px 0 0 #71a39a;
-}
-
-#side-nav ul ul:after{
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-width: 0 6px 6px 6px;
-    border-style: solid;
-    border-color: #71a39a transparent; 
-}
-
-#side-nav ul li ul{
 	position: absolute;
-	top: 25px;
-	left: 0;
+	top:0;
 	z-index: 999;
+}
+
+#side-nav ul ul li{
+	width: 91%;
+	margin-left: auto;
 }
 
 #side-nav ul li:hover > ul {
 	display: block;
+}
+
+.sidefoot{
+	width:60%;
+	margin:0 auto 15px auto;
+}
+
+.sidefoot ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+.sidefoot ul li{
+	float: left;
+	width: 19%;
+	margin: 0 3%;
 }
 
 

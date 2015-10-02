@@ -33,28 +33,28 @@ get_header(); ?>
 						<h2>Cake Flavours</h2>
 						<ul class="boxlist">
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/vanilla.png" alt="" style="width:100%">Vanilla Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla Cake
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/choco.png" alt="" style="width:100%">Chocolate Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Chocolate Cake
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/carrot.png" alt="" style="width:100%">Carrot Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/carrot.png" alt="" style="width:100%">Carrot Cake
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/red-velvet.png" alt="" style="width:100%">Red Velvet Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/red-velvet.png" alt="" style="width:100%">Red Velvet Cake
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/vanilla.png" alt="" style="width:100%">Marble Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Marble Cake
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/banana.png" alt="" style="width:100%">Banana Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/banana.png" alt="" style="width:100%">Banana Cake
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/lemon.png" alt="" style="width:100%">Lemon Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/lemon.png" alt="" style="width:100%">Lemon Cake
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/vanilla.png" alt="" style="width:100%">Vanilla Rainbow Cake
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla Rainbow Cake
 							</li>
 						</ul>
 
@@ -75,25 +75,25 @@ get_header(); ?>
 						</p>
 						<ul class="boxlist">
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/vanilla.png" alt="" style="width:100%">Vanilla
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/choco.png" alt="" style="width:100%">Chocolate
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Chocolate
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/carrot.png" alt="" style="width:100%">Mocha
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/carrot.png" alt="" style="width:100%">Mocha
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/red-velvet.png" alt="" style="width:100%">Lemon
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/red-velvet.png" alt="" style="width:100%">Lemon
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/vanilla.png" alt="" style="width:100%">Oreos &amp; Cream
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Oreos &amp; Cream
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/banana.png" alt="" style="width:100%">Coffee
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/banana.png" alt="" style="width:100%">Coffee
 							</li>
 							<li style="width:12%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/lemon.png" alt="" style="width:100%">Strawberry
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/lemon.png" alt="" style="width:100%">Strawberry
 							</li>
 						</ul>
 
@@ -117,10 +117,10 @@ get_header(); ?>
 						</p>
 						<ul class="boxlist">
 							<li style="width:24%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/vanilla.png" alt="" style="width:100%">Vanilla
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla
 							</li>
 							<li style="width:24%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/choco.png" alt="" style="width:100%">Chocolate
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Chocolate
 							</li>
 						</ul>
 					</div>
@@ -131,10 +131,10 @@ get_header(); ?>
 						</p>
 						<ul class="boxlist">
 							<li style="width:24%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/vanilla.png" alt="" style="width:100%">Chocolate Ganache
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Chocolate Ganache
 							</li>
 							<li style="width:24%">
-								<img src="http://localhost/wp/wp-content/uploads/2015/10/choco.png" alt="" style="width:100%">Cream Cheese
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Cream Cheese
 							</li>
 						</ul>
 					</div>
