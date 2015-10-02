@@ -3,7 +3,7 @@
  * Template for displaying Category Archive pages
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
+ * @subpackage Twenty_Eleven 
  * @since Twenty Eleven 1.0
  */
 
@@ -36,6 +36,8 @@ get_header(); ?>
 
 			<?php endif; ?>
 
+			<a id="inifiniteLoader">Loading... <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ajax-loader.gif" /></a>
+
 			</div><!-- #content -->
 		</section><!-- #primary -->
 
@@ -54,11 +56,13 @@ get_header(); ?>
 		        	?>;
 
 		function loadArticle(pageNumber){   
+          	$j('a#inifiniteLoader').show('fast');
 		    $j.ajax({
 		        url: "<?php bloginfo('wpurl') ?>/wp-admin/admin-ajax.php",
 		        type:'POST',
 		        data: "action=infinite_scroll&page_no="+ pageNumber + '&loop_file=loop&slug=' + slug,
-		        success: function(html){
+		        success: function(html){                          
+		        	$j('a#inifiniteLoader').hide('1000');
 		            $j("#dyn").append(html);
 		        }
 		    });

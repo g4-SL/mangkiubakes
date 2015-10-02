@@ -203,13 +203,27 @@ body{padding: 0}
 	margin-left: auto;
 }
 
+#side-nav ul li:hover ul li:hover a{
+	color: #fff;
+}
+
 #side-nav ul li:hover > ul {
 	display: block;
 }
 
+#search{
+	margin:0 auto;
+	width: 70%;
+}
+
+#searchform{padding: 10px 0;}
+#searchform input#s{
+	padding-right:0;
+}
+
 .sidefoot{
 	width:60%;
-	margin:0 auto 15px auto;
+	margin:0 auto;
 }
 
 .sidefoot ul{
@@ -354,9 +368,9 @@ hgroup{display: none}
 }
 .pt{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
+	font-size: 0.8em;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 	color: #fff;
 	padding: 5px 0;
 	background-color: #71a39a;
@@ -404,8 +418,11 @@ hgroup{display: none}
 	width: 100% !important;
 }
 
+.center{
+	text-align: center;	
+}
+
 .tt ul.category{
-	text-align: center;
 	list-style-type: none;
 	margin: 0;
 }
@@ -424,10 +441,9 @@ hgroup{display: none}
 	padding: 6px 15px;
 }
 
-/*----- Content of Tabs -----*/
+/*----- price list -----*/
 .tabledesign {
 	margin: 0 auto 15px auto; 
-/*	background: url('http://localhost/wp/wp-content/uploads/2015/09/bg-menu.jpg');*/
 }
 table{
 	width:80%;
@@ -437,7 +453,7 @@ table{
 	font-weight: normal;
 	color: #0c0c0c;
 }
-table tr th, .othertit{
+table tr th{
 	font-family: 'Lobster';
 	color: #5b4039;
 	padding-left:15px;
@@ -459,6 +475,15 @@ table tr td:nth-child(2){
 	float:right;
 }
 .othertit{
-	font-size: 1.2em;
-	margin-bottom: 10px;
+	margin: 10px 0;
+	padding-top: 5px;
+	text-align:center;
+	background-color: #71a39a;
+}
+
+/*infinite scroll*/
+a#inifiniteLoader{
+	text-align: center;  
+    z-index: 2;  
+    display:none;
 }

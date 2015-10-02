@@ -17,6 +17,10 @@ if ( 'content' != $current_layout ) :
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="" style="width:100%"></a>
 			</div>
 
+			<div id="search">
+				<?php get_search_form(); ?>
+			</div>
+
 			<nav id="side-nav" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
 				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
@@ -32,10 +36,6 @@ if ( 'content' != $current_layout ) :
 
 			<div class="container" style="position:relative">
 				<div class="sidefoot">
-					<div style="text-align:center;width:80%;margin:auto">
-						<?php get_search_form(); ?>
-					</div>
-					<div class="clear"></div>
 					<ul>
 						<li><img src="<?php bloginfo('stylesheet_directory'); ?>/img/social/ig.png" alt="" style="width:100%"></li>
 						<li><img src="<?php bloginfo('stylesheet_directory'); ?>/img/social/fb.png" alt="" style="width:100%"></li>

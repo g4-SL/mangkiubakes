@@ -41,7 +41,9 @@ get_header(); ?>
 							<li>Please ensure someone will be able to receive the package</li>
 							<li>We do not guarantee shipment due to circumstances beyond our control (i.e., weather conditions, theft, holiday delays, incorrect information provided, etc.)</li>
 						</ul>
-						<h1>Thank you and enjoy your order!</h1>
+						<div style="margin:0 auto; width:80%; margin-top:30px">
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/thankyou.png" alt="" style="width:100%">
+						</div>
 					</div>
 				</div>
 

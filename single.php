@@ -19,7 +19,7 @@ get_header(); ?>
 
 					<?php endwhile; // end of the loop. ?>
 
-					<div class="othertit"><h2 style="text-align:center">And many other goodies</h2></div>
+					<div class="othertit"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/others.png" alt="" style="width:50%"></div>
 
 					<?php
 					$related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 4, 'post__not_in' => array($post->ID) ) );

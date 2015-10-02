@@ -15,7 +15,7 @@
 		<?php
 		$post_categories = wp_get_post_categories( get_the_ID());
 			
-		echo '<div class="tt" style="width:90%; margin:0 auto"><ul class="category">';
+		echo '<div class="tt" style="width:90%; margin:0 auto"><ul class="category center">';
 		foreach($post_categories as $c){
 			$cat = get_category( $c );
 			$category_id = get_cat_ID( $cat->slug );
