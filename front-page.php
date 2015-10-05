@@ -71,22 +71,22 @@ get_header(); ?>
 
 					<div style="text-align:center">
 				        <div class="three columns space">
-			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Policies')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/01/20141126_104314.jpg" alt="" class="intro-cat"></a>
+			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Policies')->ID)) ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/policies.jpg" alt="" class="intro-cat"></a>
 				        	<div class="pts dashed">Policies</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
-			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Order Online')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/03/20150226_131859.jpg" alt="" class="intro-cat"></a>
+			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Order Online')->ID)) ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/feedback.jpg" alt="" class="intro-cat"></a>
 			            	<div class="pts dashed">Order</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
-			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Price List')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/01/20141209_065949.jpg" alt="" class="intro-cat"></a>
+			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Price List')->ID)) ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/price.jpg" alt="" class="intro-cat"></a>
 			            	<div class="pts dashed">Price List</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
 				        <div class="three columns space">
-			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Feedback')->ID)) ?>"><img src="http://localhost/wp/wp-content/uploads/2015/07/20150318_095325.jpg" alt="" class="intro-cat"></a>
+			            	<a href="<?php echo esc_url(get_page_link(get_page_by_title('Feedback')->ID)) ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/feedback.jpg" alt="" class="intro-cat"></a>
 			            	<div class="pts dashed">Feedback</div>
 			            	<p>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
 			            </div>
@@ -97,15 +97,15 @@ get_header(); ?>
 					<div style="text-align:center">
 				        <div class="four columns space">
 			            	<div class="pts">Customer review</div>
-			            	<img src="http://localhost/wp/wp-content/uploads/2015/08/rainbow-cake.jpg" alt="" class="intro-cat">
+			            	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/place.jpg" alt="" class="intro-cat">
 			            </div>
 				        <div class="four columns space">
 			            	<div class="pts">Latest instagram</div>
-			            	<img src="http://localhost/wp/wp-content/uploads/2015/08/rainbow-cake.jpg" alt="" class="intro-cat">
+			            	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/place.jpg" alt="" class="intro-cat">
 			            </div>
 				        <div class="four columns space">
 			            	<div class="pts">Our sister shop</div>
-			            	<img src="http://localhost/wp/wp-content/uploads/2015/08/945png.png" alt="" class="intro-cat">
+			            	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/place.jpg" alt="" class="intro-cat">
 			            </div>
 			        </div>
 				</div>

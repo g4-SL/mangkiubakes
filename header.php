@@ -73,15 +73,18 @@
 
 <body <?php body_class(); ?>>
 	<header id="branding" role="banner">
-			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-			</hgroup>
 
-			<ul id="nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+			<div class="mobile-menu">
+				<hgroup>
+					<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+				</hgroup>
+
+				<ul id="nav">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				</ul>
+
+				<div class="clear"></div>
+			</div>
 
 			<?php
 				// Check to see if the header image has been removed

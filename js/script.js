@@ -17,8 +17,12 @@ $j(document).ready(function(){
 	checkSidePosition();
 
 	$j(window).scroll(function(){
+		// make sure nav sidebar sticks to page at all time
 		checkSidePosition();
 	});
+
+	// remove parent link of naviagtion bar
+ 	$j('#nav ul.children').parent(['li']).find('a:first').removeAttr('href');
 
 	$j('#side-nav ul li ul').css({left: $j('#side-nav').width() - 10});
 	$j('.sidefoot').css({paddingTop: $j(window).height() - $j('#search').height() - $j('.sidefoot ul li').height() - $j('#side-nav').height() - $j("#secondary #logo").height() - 27});
