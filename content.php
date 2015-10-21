@@ -20,7 +20,7 @@
 		</div>
 		<div class="seven columns space">
 			<div class="entry-header">
-				<h2><?php the_title(); ?></h2>
+				<h2 class="cursive"><?php the_title(); ?></h2>
 
 				<?php
 				$post_categories = wp_get_post_categories( get_the_ID());

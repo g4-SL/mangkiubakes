@@ -13,7 +13,7 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<div class="container">
-					<div class="hd twelve columns"><?php echo get_the_title(); ?></div>
+					<div class="twelve columns"><h1><?php echo get_the_title(); ?></h1></div>
 
 					<div class="twelve columns">
 						<p>

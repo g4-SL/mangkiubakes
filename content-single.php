@@ -10,7 +10,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<div class="hd twelve columns"><?php the_title(); ?></div>
+		<h1 class="twelve columns center"><?php the_title(); ?></h1>
 
 		<?php
 		$post_categories = wp_get_post_categories( get_the_ID());

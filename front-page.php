@@ -95,16 +95,12 @@ get_header(); ?>
 					<div class="clear"></div>
 					
 					<div style="text-align:center">
-				        <div class="four columns space">
+				        <div class="eight columns space">
 			            	<div class="pts">Customer review</div>
-			            	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/place.jpg" alt="" class="intro-cat">
+			            	<p class="review">The cake was great! A total hit among the kids at the birthday party <b>- Anonymous</b></p>
 			            </div>
 				        <div class="four columns space">
 			            	<div class="pts">Latest instagram</div>
-			            	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/place.jpg" alt="" class="intro-cat">
-			            </div>
-				        <div class="four columns space">
-			            	<div class="pts">Our sister shop</div>
 			            	<img src="<?php bloginfo('stylesheet_directory'); ?>/img/front/place.jpg" alt="" class="intro-cat">
 			            </div>
 			        </div>

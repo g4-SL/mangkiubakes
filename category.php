@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header" style="text-align:center">
-					<div class="hd twelve columns"><?php echo single_cat_title( '', true ); ?></div>
+					<h1 class="twelve columns"><?php echo single_cat_title( '', true ); ?></h1>
 				</header>
 
 				<div class="container" id="dyn">
