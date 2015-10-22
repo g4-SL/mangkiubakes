@@ -75,6 +75,9 @@
 	<header id="branding" role="banner">
 
 			<div class="mobile-menu">
+				<div class="search-container">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/search-icon.png" style="width:100%">
+				</div>
 				<hgroup>
 					<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
 				</hgroup>
@@ -111,7 +114,7 @@
 						$header_image_height = HEADER_IMAGE_HEIGHT;
 					}
 					?>
-					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( $header_image_width ); ?>" height="<?php echo esc_attr( $header_image_height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+					<img class="header-img" src="<?php header_image(); ?>" width="<?php echo esc_attr( $header_image_width ); ?>" height="<?php echo esc_attr( $header_image_height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 			<?php endif; // end check for removed header image ?>
 
 	</header><!-- #branding -->

@@ -21,17 +21,17 @@ $j(document).ready(function(){
 		checkSidePosition();
 	});
 
-	// remove parent link of naviagtion bar
- 	$j('#nav ul.children').parent(['li']).find('a:first').removeAttr('href');
-
 	$j('#side-nav ul li ul').css({left: $j('#side-nav').width() - 10});
 	$j('.sidefoot').css({paddingTop: $j(window).height() - $j('#search').height() - $j('.sidefoot ul li').height() - $j('#side-nav').height() - $j("#secondary #logo").height() - 27});
 
 	//mobile menu
 	$j("#nav").addClass("js");
-	$j("#nav").addClass("js").before('<div id="menu">☰</div>');
+	$j("#nav").addClass("js").before('<div class="menu-container"><div id="menu">☰</div></div>');
+	$j("#nav").css({top: $j(".mobile-menu").height() + parseInt($j('.mobile-menu').css('padding-top'), 10)});
 	$j("#menu").click(function(){
-		$j("#nav").css({top: $j("#menu").offset().top + $j("#menu").height()});
-		$j("#nav").toggle();
+		$j("#nav").slideToggle(400);
+	});	
+	$j(".sub-menu").parent().click(function(){
+		$j("#nav ul ul").slideToggle(400);
 	});
 });

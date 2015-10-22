@@ -146,6 +146,7 @@ body{padding: 0}
 
 #branding #s{display: none}
 #branding {border-top: 0;width: 100%}
+#branding #site-title{padding: 0 !important; margin: 0; text-align: center}
 #branding #site-title a{
 	font-family: 'Lobster';
 	text-transform: capitalize;
@@ -154,7 +155,9 @@ body{padding: 0}
 #searchform{padding: 15px 0}
 #s{max-width: 80%}
 
-hgroup{float:left}
+hgroup{float:left;width:60%;margin:0 !important}
+.search-container{float:left;width:7%;margin: 8px 6.5% 0}
+.menu-container{float:left;width:20%}
 .mobile-menu{
 	background: #fff;
 	padding-top: 5px;
@@ -180,8 +183,9 @@ hgroup{float:left}
 #nav ul ul{
 	display: none;
 }
-#nav ul li:hover > ul{
-	display: block;
+#nav ul ul li a{
+	padding: 8px 15%;
+	width: auto;
 }
 #nav li {
 	width:100%;
@@ -196,14 +200,18 @@ hgroup{float:left}
 	display: block;
 	width:80%;
 	background:#ddd;
-	padding:4% 10%;
-	font-size:1.35em;
+	padding:8px 10%;
+	font-size:1em;
 	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: inherit;
 }
 
 @media only screen and (max-width: 480px){
 #branding {padding-bottom:2px;}
-#branding img{display: none}
+#branding .header-img{display: none}
 #branding hgroup #site-title{display: block; padding: 0}
 #nav.js {display: none}
 #main {padding: 0;}
@@ -211,9 +219,8 @@ hgroup{float:left}
 }
 
 @media only screen and (min-width: 481px){
-hgroup{display: none}
 #branding #nav{display: none}
-#menu{display: none}
+.mobile-menu{display:none}
 }
 
 /* =Sidebar
