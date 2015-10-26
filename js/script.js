@@ -4,7 +4,7 @@ var checkSidePosition;
 $j(document).ready(function(){
 
 	//make the nav sticky
-	var stickyHeader = $j('#branding').offset().top + $j('#branding').height() + parseInt($j('#secondary').css('padding-top'), 10);
+	var stickyHeader = $j('#branding').offset().top + $j('#branding').height() + parseInt($j('#branding').css('padding-bottom'), 10) + 8;
 	
 	function checkSidePosition(){
 		if( $j(window).scrollTop() > stickyHeader ) {
@@ -21,8 +21,13 @@ $j(document).ready(function(){
 		checkSidePosition();
 	});
 
-	$j('#side-nav ul li ul').css({left: $j('#side-nav').width() - 10});
+	$j('#side-nav ul li ul').css({left: $j('#side-nav').width() - 10}); //sidebar width
 	$j('.sidefoot').css({paddingTop: $j(window).height() - $j('#search').height() - $j('.sidefoot ul li').height() - $j('#side-nav').height() - $j("#secondary #logo").height() - 27});
+
+	//content div must be at least the height of browser window
+	$j('#content').css({height: Math.max($j(window).height() - $j('#colophon').height() - parseInt($j('#content').css('padding-bottom'), 10) - parseInt($j('#content').css('margin-bottom'), 10), $j('.container').height())});
+
+	console.log($j(window).height() - $j('#colophon').height());
 
 	//mobile menu
 	$j("#nav").addClass("js");

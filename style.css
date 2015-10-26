@@ -156,7 +156,7 @@ body{padding: 0}
 #s{max-width: 80%}
 
 hgroup{float:left;width:60%;margin:0 !important}
-.search-container{float:left;width:7%;margin: 8px 6.5% 0}
+.search-container{float:left;width:5.5%;margin: 8px 7.25% 0}
 .menu-container{float:left;width:20%}
 .mobile-menu{
 	background: #fff;
@@ -341,10 +341,13 @@ hgroup{float:left;width:60%;margin:0 !important}
 @media only screen and (max-width: 480px){
 h1{font-size: 2.2em; line-height: 30px; padding:15px 0 !important;}
 .tt ul.category li a{font-size: 0.9em}
+.boxlist li, .boxlist_big li{width:24%}
 }
 
 @media only screen and (min-width: 481px){
 h1{font-size: 2.7em; line-height: 50px}
+.boxlist li{width:12%}
+.boxlist_big li{width:25%}
 }
 
 .circular{
@@ -439,13 +442,13 @@ h1{font-size: 2.7em; line-height: 50px}
 	padding-left: 5px;
 }
 
-.boxlist{
+.boxlist, .boxlist_big{
 	margin: 0;
 	list-style-type: none;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
-.boxlist li{
+.boxlist li, .boxlist_big li{
 	text-align: center;
 	list-style-type: none;
 	float: left;

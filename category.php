@@ -64,6 +64,7 @@ get_header(); ?>
 		        success: function(html){                          
 		        	$j('a#inifiniteLoader').hide('1000');
 		            $j("#dyn").append(html);
+		            $j('#content').css({height: Math.max($j('.container').height() + $j('.page-header').height(), $j(window).height() - $j('#colophon').height() - parseInt($j('#content').css('padding-bottom'), 10) - parseInt($j('#content').css('margin-bottom'), 10))});
 		        }
 		    });
 		    return false;

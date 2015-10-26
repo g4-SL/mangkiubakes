@@ -32,28 +32,28 @@ get_header(); ?>
 					<div class="twelve columns">
 						<h2>Cake Flavours</h2>
 						<ul class="boxlist">
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla Cake
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Chocolate Cake
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/carrot.png" alt="" style="width:100%">Carrot Cake
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/red-velvet.png" alt="" style="width:100%">Red Velvet Cake
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Marble Cake
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/banana.png" alt="" style="width:100%">Banana Cake
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/lemon.png" alt="" style="width:100%">Lemon Cake
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla Rainbow Cake
 							</li>
 						</ul>
@@ -74,25 +74,25 @@ get_header(); ?>
 							Buttercream-based fillings**: (Flavours, fruit, nuts are mixed into buttercream for a rich delicious filling)
 						</p>
 						<ul class="boxlist">
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Chocolate
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/carrot.png" alt="" style="width:100%">Mocha
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/red-velvet.png" alt="" style="width:100%">Lemon
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Oreos &amp; Cream
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/banana.png" alt="" style="width:100%">Coffee
 							</li>
-							<li style="width:12%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/lemon.png" alt="" style="width:100%">Strawberry
 							</li>
 						</ul>
@@ -115,11 +115,11 @@ get_header(); ?>
 						<p>
 							Custard Fillings:
 						</p>
-						<ul class="boxlist">
-							<li style="width:24%">
+						<ul class="boxlist_big">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Vanilla
 							</li>
-							<li style="width:24%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Chocolate
 							</li>
 						</ul>
@@ -129,11 +129,11 @@ get_header(); ?>
 						<p>
 							Other Fillings:
 						</p>
-						<ul class="boxlist">
-							<li style="width:24%">
+						<ul class="boxlist_big">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/vanilla.png" alt="" style="width:100%">Chocolate Ganache
 							</li>
-							<li style="width:24%">
+							<li>
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/specialty/choco.png" alt="" style="width:100%">Cream Cheese
 							</li>
 						</ul>
