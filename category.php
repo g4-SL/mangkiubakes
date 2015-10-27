@@ -11,33 +11,34 @@ get_header(); ?>
 
 		<section id="primary">
 			<div id="content" role="main">
+				<div class="container">
 
-			<?php if ( have_posts() ) : ?>
+					<?php if ( have_posts() ) : ?>
 
-				<header class="page-header" style="text-align:center">
-					<h1 class="twelve columns"><?php echo single_cat_title( '', true ); ?></h1>
-				</header>
+						<header class="page-header" style="text-align:center">
+							<h1 class="twelve columns"><?php echo single_cat_title( '', true ); ?></h1>
+						</header>
 
-				<div class="container" id="dyn">
+						<div id="dyn">
+						</div>
+
+					<?php else : ?>
+
+						<article id="post-0" class="post no-results not-found">
+							<header class="entry-header">
+								<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
+							</header><!-- .entry-header -->
+
+							<div class="entry-content">
+								<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
+								<?php get_search_form(); ?>
+							</div><!-- .entry-content -->
+						</article><!-- #post-0 -->
+
+					<?php endif; ?>
+
+					<a id="inifiniteLoader">Loading... <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ajax-loader.gif" /></a>
 				</div>
-
-			<?php else : ?>
-
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
-
-			<?php endif; ?>
-
-			<a id="inifiniteLoader">Loading... <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ajax-loader.gif" /></a>
-
 			</div><!-- #content -->
 		</section><!-- #primary -->
 
@@ -64,7 +65,7 @@ get_header(); ?>
 		        success: function(html){                          
 		        	$j('a#inifiniteLoader').hide('1000');
 		            $j("#dyn").append(html);
-		            $j('#content').css({height: Math.max($j('.container').height() + $j('.page-header').height(), $j(window).height() - $j('#colophon').height() - parseInt($j('#content').css('padding-bottom'), 10) - parseInt($j('#content').css('margin-bottom'), 10))});
+		            $j('#content').css({height: Math.max($j('.container').height(), $j(window).height() - $j('#colophon').height() - parseInt($j('#content').css('padding-bottom'), 10) - parseInt($j('#content').css('margin-bottom'), 10))});
 		        }
 		    });
 		    return false;

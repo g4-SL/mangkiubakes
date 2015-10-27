@@ -24,11 +24,6 @@ $j(document).ready(function(){
 	$j('#side-nav ul li ul').css({left: $j('#side-nav').width() - 10}); //sidebar width
 	$j('.sidefoot').css({paddingTop: $j(window).height() - $j('#search').height() - $j('.sidefoot ul li').height() - $j('#side-nav').height() - $j("#secondary #logo").height() - 27});
 
-	//content div must be at least the height of browser window
-	$j('#content').css({height: Math.max($j(window).height() - $j('#colophon').height() - parseInt($j('#content').css('padding-bottom'), 10) - parseInt($j('#content').css('margin-bottom'), 10), $j('.container').height())});
-
-	console.log($j(window).height() - $j('#colophon').height());
-
 	//mobile menu
 	$j("#nav").addClass("js");
 	$j("#nav").addClass("js").before('<div class="menu-container"><div id="menu">☰</div></div>');
@@ -39,4 +34,10 @@ $j(document).ready(function(){
 	$j(".sub-menu").parent().click(function(){
 		$j("#nav ul ul").slideToggle(400);
 	});
+});
+
+$j(window).load(function() {
+    
+	//content div must be at least the height of browser window
+	$j('#content').css({height: Math.max($j(window).height() - $j('#colophon').height() - parseInt($j('#content').css('padding-bottom'), 10) - parseInt($j('#content').css('margin-bottom'), 10), $j('.container').height())});
 });
